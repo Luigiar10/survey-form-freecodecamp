@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formulario {
+    overflow-y: auto;
+}
+
+#title {
+    text-align: center;
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#description {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+#survey-form {
+    margin: 0 auto;
+    max-width: 50vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .survey-form {
+        max-width: 99vw;
+    }
+}
+
+#name-label,
+#email-label,
+#number-label {
+    font-size: 1.1rem;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#submit {
+    display: block;
+    width: 100%;
+    margin-top: .3rem;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+#name:focus,
+#email:focus,
+#number:focus,
+#dropdown:focus {
+    outline: 1px solid rgb(0, 183, 255);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group p {
+    font-size: 1.1rem;
+}
+
+.aling {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.check label {
+    display: block;
+    font-size: 1.1rem;
+}
+
+
+textarea {
+    max-width: 100%;
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+}
+
+#submit {
+    background-color: #37af65;
+    color: #fff;
+}
